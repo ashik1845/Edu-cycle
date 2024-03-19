@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Edu Cycle</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom styles -->
+  <style>
+    body {
+      background-color: #f5f5f5; /* Cream background */
+      color: #333; /* Dark text */
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 50px auto;
+      background-color: #fff; /* White background */
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-btn {
+        color: #fff;
+      background-color: #28a745; /* Green button */
+      border-color: #28a745;
+    }
+    .login-btn:hover {
+      background-color: #218838; /* Darker green on hover */
+      border-color: #1e7e34;
+    }
+    .signup-link {
+      color: #28a745; /* Green link color */
+    }
+    .signup-link:hover {
+      color: #1e7e34; /* Darker green on hover */
+    }
+    #login{
+        color: #1e7e34;
+    }
+    .forgot{
+        color: #1e7e34;
+    }
+    
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <div class="login-container">
+          <h2 id="login"class="text-center mb-4">Log In</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            <a class="btn btn-lg btn-block login-btn font-weight-bold" onclick="window.location.href='welcome.html'">Log In</a>
+            <div class="text-center mt-3">
+              <a href="forgotpassword.html" class="forgot-password-link forgot">Forgot password?</a>
+            </div>
+          </form>
+          <div class="text-center mt-3">
+            <p>Don't have an account? <a href="signup.html" class="signup-link">Sign Up</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
